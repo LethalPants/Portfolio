@@ -14,6 +14,7 @@ $primary-text: #373737;
   transform-origin: 100% 100%;
 
   a {
+    font-family: "IBM Plex Sans", sans-serif;
     font-weight: 500;
     display: inline-block;
     margin: 0 1em;
@@ -27,12 +28,23 @@ $primary-text: #373737;
       rgba(0, 116, 240, 0.6) 0%,
       rgba(0, 116, 240, 0.6) 100%
     );
-    background-position: 0 100%;
+    background-position: 0 80%;
     background-repeat: repeat-x;
-    background-size: 4px 4px;
-    transition: background-size 0.2s ease-in-out;
-  }
-  a:hover {
-    background-size: 4px 18px;
+    background-size: 1px 4px;
+    transition: background-size 0.1s ease-in-out;
+
+    &:after {
+      content: "";
+      width: 4px;
+      height: 4px;
+      position: absolute;
+      bottom: 1px;
+      right: -1px;
+      background: #eee;
+    }
+
+    &:hover {
+      background-size: 4px 18px;
+    }
   }
 }

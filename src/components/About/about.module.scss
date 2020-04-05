@@ -1,0 +1,51 @@
+$primary-color: #0075f2;
+$primary-text: #373737;
+
+.aboutMe {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  box-sizing: content-box;
+  justify-content: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-self: center;
+  min-height: 100vh;
+  padding: 0 10%;
+  color: $primary-text;
+
+  .header {
+    align-self: flex-end;
+    h1 {
+      margin: 0;
+    }
+    span {
+      text-transform: uppercase;
+      letter-spacing: 0.3em;
+      font-weight: 500;
+    }
+  }
+
+  .content {
+    .buttonCV {
+      background: $primary-color;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 1em;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 0.8em;
+    }
+  }
+}
+
+@media (min-width: 31.25rem) {
+  .aboutMe {
+    .header {
+      align-self: center;
+    }
+    .content {
+      align-self: center;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 $primary-color: #0075f2;
 $primary-text: #373737;
 
-.hero-me {
+.me {
   display: grid;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -10,26 +10,12 @@ $primary-text: #373737;
   color: $primary-text;
   padding-left: 10%;
 
-  .hero-heading {
+  .heading {
     font-size: calc(1vw + 2em);
     width: calc(100vw - 40%);
     align-self: end;
   }
-
-  .hero-link {
-    color: $primary-text;
-    text-decoration: none;
-    background: linear-gradient(
-      to bottom,
-      $primary-text 0%,
-      $primary-text 100%
-    );
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 1px 1px;
-  }
-
-  .hero-label {
+  .label {
     letter-spacing: 0.15rem;
     display: block;
     grid-column: 2;
@@ -38,7 +24,23 @@ $primary-text: #373737;
     color: #aaa;
     text-transform: uppercase;
   }
-  .hero-ltis {
+
+  .intro {
+    font-style: italic !important;
+  }
+  .link {
+    color: $primary-text;
+    text-decoration: none;
+    background: linear-gradient(
+      to bottom,
+      $primary-text 0%,
+      $primary-text 100%
+    );
+    background-position: 0 90%;
+    background-repeat: repeat-x;
+    background-size: 1px 2px;
+  }
+  .importantStuff {
     a {
       display: block;
       color: $primary-text;
@@ -57,7 +59,7 @@ $primary-text: #373737;
       transition: background-size 0.2s ease-in-out;
     }
     a:hover {
-      background-size: 4px 10px;
+      background-size: 4px 12px;
     }
   }
 }
