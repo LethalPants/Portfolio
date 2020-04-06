@@ -1,0 +1,33 @@
+$primary-color: #0075f2;
+$primary-text: #373737;
+
+.work {
+  display: grid;
+  gap: 4em;
+  justify-content: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-self: center;
+  min-height: 100vh;
+  padding: 0 10%;
+  color: $primary-text;
+
+  .header {
+    align-self: flex-end;
+    h1 {
+      margin: 0;
+    }
+    span {
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      font-weight: 600;
+    }
+  }
+
+  .workBody {
+    .content {
+      display: grid;
+      gap: 2em;
+    }
+  }
+}

@@ -13,7 +13,7 @@ $primary-text: #373737;
   transform: rotate(90deg);
   transform-origin: 100% 100%;
 
-  a {
+  span {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 500;
     display: inline-block;
@@ -23,6 +23,7 @@ $primary-text: #373737;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.5em;
+    text-indent: 0.5em;
     background: linear-gradient(
       to bottom,
       rgba(0, 116, 240, 0.6) 0%,
@@ -32,17 +33,7 @@ $primary-text: #373737;
     background-repeat: repeat-x;
     background-size: 1px 4px;
     transition: background-size 0.1s ease-in-out;
-
-    &:after {
-      content: "";
-      width: 4px;
-      height: 4px;
-      position: absolute;
-      bottom: 1px;
-      right: -1px;
-      background: #eee;
-    }
-
+    cursor: pointer;
     &:hover {
       background-size: 4px 18px;
     }

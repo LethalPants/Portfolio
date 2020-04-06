@@ -1,0 +1,19 @@
+.header-links {
+  position: absolute;
+  margin: 2em 10% 0 10%;
+  .header-Link-Image {
+    width: 1.3em;
+    margin: 1em;
+  }
+}
+
+.header-links-center {
+  .header-Link-Image {
+    width: 1.3em;
+    margin: 1em;
+  }
+
+  .link-image-spread {
+    margin: 5vw;
+  }
+}

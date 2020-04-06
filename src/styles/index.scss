@@ -3,10 +3,17 @@ $primary-color: #0075f2;
 $primary-text: #373737;
 $background-color: #fbfbfb;
 
+::selection {
+  background: $primary-text;
+  color: $background-color;
+}
+
 html {
   font-size: 16px;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 /* Sections
@@ -20,7 +27,7 @@ body {
   margin: 0;
   background: $background-color;
   font: 100% $font-stack;
-  color: $primary-color;
+  color: $primary-text;
 }
 
 /**

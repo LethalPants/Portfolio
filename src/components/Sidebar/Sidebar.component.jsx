@@ -1,13 +1,19 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
-import { Link } from "gatsby"
 import "./sidebar.styles.scss"
 const SideBar = () => (
-  <div class="sidebar">
-    <Link to="/">home</Link>
-    <Link to="#aboutMe">about</Link>
-    <Link to="/">work</Link>
-    <Link to="/">contact</Link>
+  <div className="sidebar">
+    <span onClick={() => scrollTo("#top")} role="link">
+      home{" "}
+    </span>
+    <span onClick={() => scrollTo("#aboutMe")} role="link">
+      about
+    </span>
+    <span onClick={() => scrollTo("#projects")} role="link">
+      Projects
+    </span>
+    <span to="/">contact</span>
   </div>
 )
 

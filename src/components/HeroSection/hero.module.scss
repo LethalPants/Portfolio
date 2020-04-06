@@ -19,7 +19,7 @@ $primary-text: #373737;
     letter-spacing: 0.15rem;
     display: block;
     grid-column: 2;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 500;
     color: #aaa;
     text-transform: uppercase;
@@ -39,6 +39,7 @@ $primary-text: #373737;
     background-position: 0 90%;
     background-repeat: repeat-x;
     background-size: 1px 2px;
+    cursor: pointer;
   }
   .importantStuff {
     a {

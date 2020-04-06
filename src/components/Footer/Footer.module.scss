@@ -1,0 +1,42 @@
+$primary-color: #0075f2;
+$primary-text: #373737;
+
+.foot {
+  display: grid;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  min-height: 100vh;
+  color: $primary-text;
+  padding: 0 10%;
+
+  .name {
+    align-self: end;
+    justify-self: center;
+    .heading {
+      cursor: pointer;
+      text-align: center;
+      margin: 0 auto;
+      font-size: calc(1vw + 2em);
+    }
+    .horizontalRule {
+      width: 50vw;
+      border: 0;
+      height: 1px;
+      background-image: linear-gradient(
+        to right,
+        rgba(173, 173, 173, 0.185),
+        #a5a5a550,
+        rgba(173, 173, 173, 0.185)
+      );
+    }
+  }
+
+  div {
+    align-self: start;
+    justify-self: center;
+  }
+}

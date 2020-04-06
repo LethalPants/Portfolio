@@ -1,0 +1,44 @@
+$primary-color: #0075f2;
+$primary-text: #373737;
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  .contentHeader {
+    margin: 0;
+  }
+  .contentBody {
+    margin: 0 0 10px 0;
+  }
+  .projectLink {
+    color: $primary-text;
+    text-decoration: none;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 116, 240, 0.6) 0%,
+      rgba(0, 116, 240, 0.6) 100%
+    );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 4px;
+    transition: background-size 0.1s ease-in-out;
+
+    &:hover {
+      background-size: 4px 18px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    grid-template-columns: 1fr;
+
+    .header {
+      align-self: flex-end;
+    }
+    .content {
+      align-self: start;
+    }
+  }
+}

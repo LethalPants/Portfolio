@@ -5,11 +5,13 @@ import "../../styles/index.scss"
 
 import Ribbon from "../Ribbon/ribbon.component"
 import Sidebar from "../Sidebar/Sidebar.component"
+import Links from "../Links/Links.component"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Ribbon />
+      <Links />
       <Sidebar />
       <main>{children}</main>
     </>
