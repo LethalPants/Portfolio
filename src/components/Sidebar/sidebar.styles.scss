@@ -39,3 +39,9 @@ $primary-text: #373737;
     }
   }
 }
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 95vh;
+  }
+}

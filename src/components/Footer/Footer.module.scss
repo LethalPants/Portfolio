@@ -24,7 +24,9 @@ $primary-text: #373737;
       font-weight: normal;
     }
     .horizontalRule {
-      width: 50vw;
+      width: 120%;
+      position: relative;
+      right: 10%;
       border: 0;
       height: 2px;
       background-image: linear-gradient(

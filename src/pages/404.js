@@ -13,11 +13,16 @@ const NotFoundPage = () => (
         alignItems: "center",
         justifyContent: "center",
         minHeight: "100vh",
+        padding: "0 10%",
       }}
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease-out"
+      data-sal-duration="400"
     >
       <div>
         <h4 style={{ margin: 0, fontSize: "calc(2vw + 2em)" }}>404 Error</h4>
-        <p style={{ margin: 0, fontSize: "1.5em" }}>
+        <p style={{ margin: 0, fontSize: "calc(1.5vw + 0.5em)" }}>
           Looks like you're lost... the sadness
         </p>
         <Link
