@@ -6,8 +6,15 @@ import Links from "../Links/Links.component"
 
 const Footer = () => {
   return (
-    <section className={FooterStyles.foot}>
+    <section
+      className={FooterStyles.foot}
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease-out"
+      data-sal-duration="400"
+    >
       <div className={FooterStyles.name}>
+        {/* eslint-disable-next-line */}
         <h1
           role="link"
           onClick={() => scrollTo("#top")}

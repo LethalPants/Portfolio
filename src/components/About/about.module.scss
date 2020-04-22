@@ -16,13 +16,14 @@ $primary-text: #373737;
     }
     span {
       text-transform: uppercase;
-      letter-spacing: 0.3em;
+      letter-spacing: 0.2em;
       font-weight: 500;
     }
   }
 
   .content {
     align-self: center;
+    width: 95%;
     .buttonCV {
       background: $primary-color;
       border: none;
@@ -51,6 +52,7 @@ $primary-text: #373737;
     }
     .content {
       align-self: start;
+      width: 75vw;
     }
   }
 }

@@ -3,13 +3,20 @@ $primary-text: #373737;
 
 .content {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 12vw minmax(200px, 1fr);
 
   .contentHeader {
     margin: 0;
+    h6 {
+      margin: 0 0 2px 0;
+    }
+    span {
+      font-size: 0.9em;
+    }
   }
   .contentBody {
     margin: 0 0 10px 0;
+    width: 75%;
   }
   .projectLink {
     color: $primary-text;

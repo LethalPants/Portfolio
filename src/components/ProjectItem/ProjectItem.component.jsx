@@ -2,10 +2,13 @@ import React from "react"
 import ProjectItemStyles from "./Projectitem.module.scss"
 import PropTypes from "prop-types"
 
-const WorkItem = ({ title, description, link }) => {
+const WorkItem = ({ title, description, link, date }) => {
   return (
     <div className={ProjectItemStyles.content}>
-      <h6 className={ProjectItemStyles.contentHeader}>{title}</h6>
+      <div className={ProjectItemStyles.contentHeader}>
+        <h6>{title}</h6>
+        {date ? <span>{date}</span> : null}
+      </div>
       <div>
         <p className={ProjectItemStyles.contentBody}>{description}</p>
         {link ? (

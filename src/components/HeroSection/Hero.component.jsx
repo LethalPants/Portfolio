@@ -1,14 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 import HeroStyles from "./hero.module.scss"
 const Hero = () => (
-  <section className={HeroStyles.me} id="top">
+  <section
+    className={HeroStyles.me}
+    id="top"
+    data-sal="slide-up"
+    data-sal-delay="300"
+    data-sal-easing="ease-out"
+    data-sal-duration="400"
+  >
     <h1 className={HeroStyles.heading}>
       <span className={HeroStyles.label}>Hello,</span>
       <span className={HeroStyles.intro}>
-        I'm Hatim and{" "}
+        I'm Hatim, and {/* eslint-disable-next-line */}
         <span
           role="link"
           onClick={() => scrollTo("#projects")}
@@ -21,7 +27,15 @@ const Hero = () => (
     </h1>
 
     <div className={HeroStyles.importantStuff}>
-      <Link to="/">review my life from my resume.</Link>
+      {/*eslint-disable-next-line*/}
+      <span
+        onClick={() => {
+          window.open("/HatimResume.pdf")
+        }}
+        role="link"
+      >
+        review my life from my resume.
+      </span>
       <a href="mailto:hatimmurtuzayt@gmail.com">send me an email.</a>
     </div>
   </section>

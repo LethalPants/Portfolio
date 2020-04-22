@@ -21,11 +21,12 @@ $primary-text: #373737;
       text-align: center;
       margin: 0 auto;
       font-size: calc(1vw + 2em);
+      font-weight: normal;
     }
     .horizontalRule {
       width: 50vw;
       border: 0;
-      height: 1px;
+      height: 2px;
       background-image: linear-gradient(
         to right,
         rgba(173, 173, 173, 0.185),

@@ -42,7 +42,9 @@ $primary-text: #373737;
     cursor: pointer;
   }
   .importantStuff {
+    span,
     a {
+      cursor: pointer;
       display: block;
       color: $primary-text;
       text-decoration: none;
@@ -59,7 +61,7 @@ $primary-text: #373737;
       background-size: 4px 4px;
       transition: background-size 0.2s ease-in-out;
     }
-    a:hover {
+    span:hover {
       background-size: 4px 12px;
     }
   }

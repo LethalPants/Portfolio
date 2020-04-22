@@ -1,0 +1,21 @@
+{
+  "projects": [
+    {
+      "title": "tia",
+      "date": "November 2019",
+      "description": "A centralized web-based solution for stock-management and invoicing for a local business based in Kuwait.",
+      "link": "https://github.com/LethalPants/TIA"
+    },
+    {
+      "date": "March 2020",
+      "title": "reviewd",
+      "description": "Reviewd, is a video game review aggregator that brings the top critics in gaming all in one place. The reviews are collected from the top publications in gaming, such as IGN, GameSpot, Polygon, and Eurogamer.",
+      "link": "https://github.com/LethalPants/reviewd"
+    },
+    {
+      "date": "January 2020",
+      "title": "alumna",
+      "description": "A social media app for the alumni of colleges under the Directorate of Higher Education, Goa. The project was written in Java and JSP and was built during The Smart India Hackathon."
+    }
+  ]
+}

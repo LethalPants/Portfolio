@@ -3,7 +3,14 @@ import React from "react"
 import AboutStyles from "./about.module.scss"
 const about = () => {
   return (
-    <section className={AboutStyles.aboutMe} id="aboutMe">
+    <section
+      className={AboutStyles.aboutMe}
+      id="aboutMe"
+      data-sal="slide-up"
+      data-sal-delay="300"
+      data-sal-easing="ease-out"
+      data-sal-duration="400"
+    >
       <div className={AboutStyles.header}>
         <h1>About.</h1>
         <span>I like to dabble in code and design.</span>
@@ -11,13 +18,22 @@ const about = () => {
 
       <div className={AboutStyles.content}>
         <p>
-          I've coded since the age of 14, started building out really small
-          "apps" in Visual Basic and have continued since. Now, I design and
-          develop web-apps with minimal design, subtle colors and an amazing
-          user experience. Most of my work is on GitHub. I am also a stickler
-          for details, dedicated to photography, coffee and music.
+          I've been developing since I was a kid, it all started out with "apps"
+          built in Visual Basic. Now, I design and develop web-apps with minimal
+          design, subtle colors, and a fantastic user experience. I am a
+          Sophomore majoring in Computer Science, where I spend most of my time
+          breaking algorithms and training neural nets. I am also a stickler for
+          details, dedicated to photography, coffee, videogames, and music are
+          also some of the topics you can use to start a conversation with me.
         </p>
-        <button className={AboutStyles.buttonCV}>Download Resume</button>
+        <button
+          className={AboutStyles.buttonCV}
+          onClick={() => {
+            window.open("/HatimResume.pdf")
+          }}
+        >
+          Download Resume
+        </button>
       </div>
     </section>
   )

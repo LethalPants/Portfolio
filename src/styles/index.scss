@@ -1,3 +1,4 @@
+@import "fonts.scss";
 $font-stack: "IBM Plex Mono", monospace;
 $primary-color: #0075f2;
 $primary-text: #373737;
@@ -11,6 +12,7 @@ $background-color: #fbfbfb;
 html {
   font-size: 16px;
   line-height: 1.15; /* 1 */
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
@@ -69,6 +71,7 @@ h6 {
 
 p {
   font-size: 1rem;
+  line-height: 1.7;
 }
 
 /* Grouping content
@@ -104,6 +107,7 @@ pre {
 
 a {
   background-color: transparent;
+  color: $primary-color;
 }
 
 /**

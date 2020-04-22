@@ -10,7 +10,12 @@ import Mail from "../../images/icons/mail.svg"
 
 const Links = ({ classes }) => {
   return (
-    <div>
+    <div
+      data-sal="fade"
+      data-sal-delay="100"
+      data-sal-easing="ease-in-out"
+      data-sal-duration="300"
+    >
       <div className={`${classes ? "header-links-center" : "header-links"}`}>
         <a
           href="https://github.com/LethalPants"
