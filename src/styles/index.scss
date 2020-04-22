@@ -9,10 +9,24 @@ $background-color: #fbfbfb;
   color: $background-color;
 }
 
+::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 117, 242, 1);
+  background-image: linear-gradient(180deg, #0075f2, #3886fc 100%);
+  opacity: 0.7;
+}
+
 html {
   font-size: 16px;
   line-height: 1.15; /* 1 */
-  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%; /* 2 */
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;

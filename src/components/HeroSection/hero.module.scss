@@ -20,8 +20,8 @@ $primary-text: #373737;
     display: block;
     grid-column: 2;
     font-size: 1rem;
-    font-weight: 500;
-    color: #aaa;
+    font-weight: 600;
+    color: #6d6d6d;
     text-transform: uppercase;
   }
 
@@ -61,8 +61,16 @@ $primary-text: #373737;
       background-size: 4px 4px;
       transition: background-size 0.2s ease-in-out;
     }
-    span:hover {
-      background-size: 4px 12px;
+  }
+}
+
+@media (hover: hover) {
+  .importantStuff {
+    span,
+    a {
+      &:hover {
+        background-size: 4px 12px;
+      }
     }
   }
 }

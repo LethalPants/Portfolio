@@ -34,14 +34,19 @@ $primary-text: #373737;
     background-size: 1px 4px;
     transition: background-size 0.1s ease-in-out;
     cursor: pointer;
-    &:hover {
-      background-size: 4px 18px;
-    }
   }
 }
 
 @media (max-width: 500px) {
   .sidebar {
     width: 95vh;
+  }
+}
+
+@media (hover: hover) {
+  .sidebar {
+    span:hover {
+      background-size: 4px 18px;
+    }
   }
 }
