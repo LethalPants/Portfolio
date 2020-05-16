@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Hatim Murtuza 🤟 Designer and Developer`,
-    description: `Hatim is a software engineer, UI designer, and Developer. He builds beautiful, robust, and intuitive web-apps. `,
+    description: `I'm a software engineer, UI designer, and Developer. I build beautiful, robust, and intuitive web-apps. `,
     author: `Hatim Murtuza`,
   },
   plugins: [
@@ -19,7 +19,7 @@ module.exports = {
         background_color: `#fbfbfb`,
         theme_color: `#0075f2`,
         display: `standalone`,
-        icon: `src/images/icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.svg`, // This path is relative to the root of the site.
         cache_busting_mode: `none`,
       },
     },

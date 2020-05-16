@@ -29,7 +29,7 @@ const Links = ({ classes }) => {
           />
         </a>
         <a
-          href="https://www.linkedin.com/in/hatim-murtuza-669072175/"
+          href="https://www.linkedin.com/in/hatimmurtuza/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -51,7 +51,7 @@ const Links = ({ classes }) => {
           />
         </a>
         <a
-          href="mailhref:hatimmurtuzayt@gmail.com"
+          href="mailto:hatimmurtuza10@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
